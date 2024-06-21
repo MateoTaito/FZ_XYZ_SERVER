@@ -68,4 +68,8 @@ jobs:
           app-name: 'FZ-XYZ-SERVER'
           slot-name: 'Production'
           package: .
+      
+      - name: change environment
+        env:
+          DATABASE_URL: ${{secrets.DATABASE_URL}}
           
