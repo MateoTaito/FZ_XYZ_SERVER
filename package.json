@@ -4,8 +4,7 @@
   "description": "fz-xyz",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec ts-node src/index.ts",
-    "test": "npx jest"
+    "dev": "nodemon --exec ts-node src/index.ts"
   },
   "author": "vittorio cancino",
   "license": "ISC",
