@@ -27,6 +27,7 @@ jobs:
         run: |
           npm install
           npm install jest
+          console.log(procces.env.DATABASE_URL)
           npm run build --if-present
           npm run test --if-present
 
