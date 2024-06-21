@@ -22,8 +22,6 @@ jobs:
           node-version: '20.x'
 
       - name: npm install, build, and test
-        env: 
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: |
           npm install
           npm install jest

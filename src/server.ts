@@ -10,6 +10,7 @@ async function connectDB() {
 		db.sync();
 	} catch (error) {
 		console.log("Error al conectar DB");
+		console.log(process.env.DATABASE_URL);
 	}
 }
 
