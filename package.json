@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --exec ts-node src/index.ts",
-    "test": "npx jest"
+    "test": "npx jest --detectOpenHandles"
   },
   "author": "vittorio cancino",
   "license": "ISC",
