@@ -1,6 +1,6 @@
 import request from 'supertest'
 import server from "../server";
-
+//g
 describe('GET /test', () => {
     test("should create an account", async () => {
         const response = await request(server).get('/api/auth/test').send();
