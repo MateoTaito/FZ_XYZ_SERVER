@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --exec ts-node src/index.ts",
-    "test": "npm jest"
+    "test": "npx jest"
   },
   "author": "vittorio cancino",
   "license": "ISC",
