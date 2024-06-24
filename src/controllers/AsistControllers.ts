@@ -23,6 +23,7 @@ export class AsistController {
 			const user_exist = await User.findOne({ where: { Email: email } });
 			if (user_exist) {
 				const error = new Error("El Email ingresado ya se encuentra registrado");
+				console.log("p");
 				return res.status(404).json({ error: error.message });
 			}
 			return res.json({})
