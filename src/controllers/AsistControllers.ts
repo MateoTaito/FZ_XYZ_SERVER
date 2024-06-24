@@ -21,6 +21,7 @@ export class AsistController {
 			const name = req.body.name;
 			// Revisamos que el correo entrante no este previamente registrado
 			const user_exist = await User.findOne({ where: { Email: email } });
+			console.log(user_exist.dataValue);
 			if (user_exist) {
 				const error = new Error("El Email ingresado ya se encuentra registrado");
 				return res.status(404).json({ error: error.message });
