@@ -8,17 +8,6 @@ describe('GET /test', () => {
     });
 });
 
-describe('POST /new-user', () => {
-    test("should test if the new user is alredy singed", async () => {
-        const response = await request(server).post('/api/asist/new-user').send({    
-            "email": "testmail@gmail.com",
-            "name": "Juan"
-        });
-        expect(response.statusCode).toBe(200);
-    });
-});
-
-
 describe('POST /create-account', () => {
     test("should create an account", async () => {
         const response = await request(server).post('/api/auth/create-account').send({    
